@@ -33,3 +33,11 @@ footer { margin-top:40px; color:var(--muted); font-size:.85rem; border-top:1px s
   h2 { break-after:avoid; }
   .note, .warn { border:1px solid var(--line); background:none; }
 }
+
+/* obrázky a tabulky dat (geometrie, grafy) */
+.fig { margin: 10px 0 4px; text-align: center; }
+.fig svg { max-width: 100%; height: auto; }
+li { break-inside: avoid; }
+table.data { width: auto; min-width: 60%; margin: 10px 0; }
+table.data td, table.data th { text-align: center; }
+.yn { margin: 4px 0 0 1.2rem; }

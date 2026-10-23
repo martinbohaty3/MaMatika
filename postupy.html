@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MaMatika: cvičné příklady inspirované přijímacími zkouškami na střední školy. Rovnice, úpravy výrazů, slovní úlohy.">
+<title>Postupy – úlohy 20 a 25 – MaMatika</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+</head>
+<body>
+<div class="nav"><a href="index.html">← Přehled materiálů</a></div>
+<h1>Podrobné postupy – úlohy 20 a 25</h1>
+
+<h2>Úloha 25 – společná práce</h2>
+<blockquote>Pepa vykope záhon za 6 hodin, Honza za 3 hodiny. Za jak dlouho ho vykopou společně?</blockquote>
+<p class="result">Výsledek: 2 hodiny.</p>
+<div class="note">Základní myšlenka: nepočítáme čas, ale <strong>kolik práce se udělá za 1 hodinu</strong>.</div>
+
+<h3>Postup 1: Zlomky (klasický postup)</h3>
+<table>
+<tr><th></th><th>Čas na celý záhon</th><th>Za 1 hodinu udělá</th></tr>
+<tr><td>Pepa</td><td>6 h</td><td>\(\dfrac{1}{6}\) záhonu</td></tr>
+<tr><td>Honza</td><td>3 h</td><td>\(\dfrac{1}{3}\) záhonu</td></tr>
+<tr><td><strong>Společně</strong></td><td>?</td><td>\(\dfrac{1}{6}+\dfrac{1}{3}=\dfrac{1}{6}+\dfrac{2}{6}=\dfrac{3}{6}=\dfrac{1}{2}\) záhonu</td></tr>
+</table>
+<ul>
+<li>Za 1 hodinu vykopou půl záhonu.</li>
+<li>Celý záhon tedy vykopou za 2 hodiny.</li>
+</ul>
+
+<h3>Postup 2: Rovnice</h3>
+<p>Společně pracují \(x\) hodin.</p>
+<ul>
+<li>Pepa za \(x\) hodin udělá \(\dfrac{x}{6}\) záhonu.</li>
+<li>Honza za \(x\) hodin udělá \(\dfrac{x}{3}\) záhonu.</li>
+<li>Dohromady musí udělat 1 celý záhon:</li>
+</ul>
+\[\frac{x}{6}+\frac{x}{3}=1 \qquad |\cdot 6\]
+\[x+2x=6\]
+\[3x=6\]
+\[x=2\]
+
+<h3>Postup 3: Záhon rozdělíme na díly (bez zlomků)</h3>
+<ul>
+<li>Vybereme číslo, které je dělitelné 6 i 3, třeba 6.</li>
+<li>Záhon má 6 dílů.</li>
+<li>Pepa vykope 6 dílů za 6 h, tedy <strong>1 díl za hodinu</strong>.</li>
+<li>Honza vykope 6 dílů za 3 h, tedy <strong>2 díly za hodinu</strong>.</li>
+<li>Společně: \(1+2=\) <strong>3 díly za hodinu</strong>.</li>
+<li>\(6 : 3 =\) <strong>2 hodiny</strong>.</li>
+</ul>
+
+<h3>Postup 4: Úvaha na 6 hodin</h3>
+<ul>
+<li>Za 6 hodin vykope Pepa 1 záhon.</li>
+<li>Za 6 hodin vykope Honza 2 záhony (jeden za 3 hodiny).</li>
+<li>Společně za 6 hodin vykopou 3 záhony.</li>
+<li>Jeden záhon tedy vykopou za \(6:3=\) <strong>2 hodiny</strong>.</li>
+</ul>
+
+<h3>Zkouška</h3>
+<ul>
+<li>Za 2 hodiny Pepa vykope \(\dfrac{2}{6}=\dfrac{1}{3}\) záhonu.</li>
+<li>Za 2 hodiny Honza vykope \(\dfrac{2}{3}\) záhonu.</li>
+<li>\(\dfrac{1}{3}+\dfrac{2}{3}=1\) celý záhon ✓</li>
+</ul>
+
+<h3>Co říct žákyni</h3>
+<ul>
+<li>Společný čas musí být <strong>kratší než ten nejkratší</strong> (kratší než 3 h). Vyšlo 2 h, to dává smysl.</li>
+<li>Časy se <strong>nesčítají</strong>. Sčítá se práce za 1 hodinu.</li>
+</ul>
+
+<h2>Úloha 20 – roztok soli</h2>
+<blockquote>V 5 kg solného roztoku je 8&nbsp;% soli. Kolik kg čisté vody je třeba přidat, aby roztok měl 5&nbsp;% soli?</blockquote>
+<p class="result">Výsledek: 3 kg vody.</p>
+<div class="note">Klíč: při přidání vody se <strong>množství soli nezmění</strong>. Mění se jen celková hmotnost.</div>
+
+<h3>Krok 1: Kolik je v roztoku soli a vody?</h3>
+<table>
+<tr><th></th><th>Hmotnost</th></tr>
+<tr><td>Roztok</td><td>5 kg</td></tr>
+<tr><td>Sůl (8&nbsp;% z 5 kg)</td><td>\(5\cdot0{,}08=\) <strong>0,4 kg</strong></td></tr>
+<tr><td>Voda</td><td>\(5-0{,}4=4{,}6\) kg</td></tr>
+</table>
+
+<h3>Krok 2: Tabulka před a po přidání vody</h3>
+<p>Přidáme \(x\) kg vody.</p>
+<table>
+<tr><th></th><th>Před</th><th>Přidáme</th><th>Po přidání</th></tr>
+<tr><td>Hmotnost roztoku</td><td>5 kg</td><td>\(x\) kg</td><td>\(5+x\) kg</td></tr>
+<tr><td>Hmotnost soli</td><td>0,4 kg</td><td>0 kg</td><td><strong>0,4 kg</strong> (beze změny)</td></tr>
+<tr><td>Hmotnost vody</td><td>4,6 kg</td><td>\(x\) kg</td><td>\(4{,}6+x\) kg</td></tr>
+<tr><td>Podíl soli</td><td>8&nbsp;%</td><td>–</td><td>5&nbsp;%</td></tr>
+</table>
+
+<h3>Krok 3: Rovnice</h3>
+<p>Sůl tvoří 5&nbsp;% nového roztoku:</p>
+\[0{,}4=0{,}05\cdot(5+x)\]
+\[0{,}4=0{,}25+0{,}05x\]
+\[0{,}15=0{,}05x\]
+\[x=3\]
+
+<h3>Krok 4: Zkouška</h3>
+<table>
+<tr><th></th><th>Hodnota</th></tr>
+<tr><td>Nový roztok</td><td>\(5+3=8\) kg</td></tr>
+<tr><td>Sůl</td><td>0,4 kg</td></tr>
+<tr><td>Podíl soli</td><td>\(0{,}4:8=0{,}05=\) <strong>5&nbsp;%</strong> ✓</td></tr>
+</table>
+
+<h3>Alternativní postup bez \(x\) (trojčlenka)</h3>
+<ul>
+<li>Nových 5&nbsp;% odpovídá 0,4 kg soli.</li>
+<li>1&nbsp;% odpovídá \(0{,}4:5=0{,}08\) kg.</li>
+<li>100&nbsp;% (celý roztok) je \(0{,}08\cdot100=\) <strong>8 kg</strong>.</li>
+<li>Původně bylo 5 kg, přidáme \(8-5=\) <strong>3 kg</strong> vody.</li>
+</ul>
+
+<h3>Časté chyby</h3>
+<ul>
+<li>Žák počítá \(8\,\%-5\,\%=3\,\%\) a pak 3&nbsp;% z 5 kg. Vyjde 0,15 kg, což je špatně. Procenta se vždy berou z <strong>celku, který se mění</strong>.</li>
+<li>Žák zapomene, že sůl se nemění.</li>
+</ul>
+<footer>MaMatika · Neoficiální cvičné příklady inspirované přijímacími zkouškami.</footer>
+</body>
+</html>

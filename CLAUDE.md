@@ -51,6 +51,10 @@ Vše je v kořeni repozitáře (`index.html` musí zůstat v kořeni).
 ## Konvence stránek
 
 - Každá stránka má `<html lang="cs">`, `<title>Název – MaMatika</title>`, odkaz zpět na `index.html` a patičku.
+- Na každé podstránce (ne na `index.html`) je odkaz zpět na přehled **nahoře i dole**:
+  - nahoře `<div class="nav"><a href="index.html">← Přehled materiálů</a> <button class="print" type="button" onclick="window.print()">Vytisknout</button></div>`,
+  - dole stejný `<div class="nav">` s odkazem, ale bez tlačítka, těsně před `<footer>`.
+- Tlačítko **Vytisknout** je jen v horním `.nav` a je vpravo (`.nav` je `display:flex` s `justify-content:space-between` ve `style.css`). Při tisku se skrývá spolu s `.nav` a `footer`.
 - Název webu je vždy **MaMatika**. V nadpisech a titulcích nepoužívej slovo CERMAT.
 - Hlavička každé stránky:
 
@@ -63,7 +67,7 @@ Vše je v kořeni repozitáře (`index.html` musí zůstat v kořeni).
 ```
 
 - Verzi KaTeX neměň bez domluvy (je připnutá na 0.16.9).
-- **Zadání** (pro žákyni): bez výsledků, `<ol start="N">` pro číslování, na konci tabulka výsledků s třídou `answers` (dva páry sloupců „Č. / Výsledek“, prázdná políčka).
+- **Zadání** (pro žákyni): bez výsledků, `<ol start="N">` pro číslování, na konci tabulka výsledků s třídou `answers` (dva páry sloupců „Č. / Výsledek“, prázdná políčka). Nadpis „Tabulka výsledků“ i tabulka jsou obalené v `<div class="print-only">`: na obrazovce se **neukazují**, zobrazí se jen při tisku (`.print-only` je ve `style.css` `display:none`, v `@media print` `display:block`). Tabulky v řešeních (klíč) se neskrývají.
 - **Řešení** (klíč): tabulka `Č. | Výsledek | Klíčový krok`. Výsledek má třídu `result`. U delších úloh rozepsané kroky a zkouška.
 - Těžší úloha má před zadáním `<span class="star">★</span>`. Hvězdičku dávej jen na zhruba každou pátou úlohu.
 - Mezera mezi příklady je **22 px** (`ol li { margin:22px 0 }` ve `style.css`). Nezvětšuj ji bez domluvy.

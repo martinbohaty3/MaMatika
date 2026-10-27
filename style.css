@@ -12,7 +12,7 @@ h3 { font-size:1.05rem; margin:22px 0 6px; }
 .print { font:inherit; padding:4px 14px; border:1px solid var(--accent); border-radius:6px; background:var(--bg); color:var(--accent); cursor:pointer; }
 .print:hover { background:var(--soft); }
 ol { padding-left:2rem; }
-ol li { margin:22px 0; padding-left:6px; } /* mezera mezi příklady: 10 px + půl řádku (~12 px) */
+ol li { margin:22px 0; padding-left:6px; } /* mezera mezi příklady: 22 px */
 .star { color:#c0392b; font-weight:700; }
 blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--line); color:var(--muted); background:#fafafa; }
 table { border-collapse:collapse; width:100%; margin:12px 0; }

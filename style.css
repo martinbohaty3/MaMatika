@@ -7,8 +7,10 @@ h3 { font-size:1.05rem; margin:22px 0 6px; }
 .sub { color:var(--muted); margin:0 0 16px; }
 .note { background:var(--soft); border-left:4px solid var(--accent); padding:10px 14px; margin:14px 0; }
 .warn { background:#fff6e5; border-left:4px solid #d98a00; padding:10px 14px; margin:14px 0; }
-.nav { font-size:.9rem; margin-bottom:18px; }
+.nav { font-size:.9rem; margin-bottom:18px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .nav a { color:var(--accent); }
+.print { font:inherit; padding:4px 14px; border:1px solid var(--accent); border-radius:6px; background:var(--bg); color:var(--accent); cursor:pointer; }
+.print:hover { background:var(--soft); }
 ol { padding-left:2rem; }
 ol li { margin:22px 0; padding-left:6px; } /* mezera mezi příklady: 10 px + půl řádku (~12 px) */
 .star { color:#c0392b; font-weight:700; }

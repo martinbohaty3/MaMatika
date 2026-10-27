@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MaMatika: cvičné příklady inspirované přijímacími zkouškami na střední školy. Rovnice, úpravy výrazů, slovní úlohy.">
+<title>Rovnice se zlomky – řešení – MaMatika</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+<style>
+/* mezera mezi příklady stejná jako jinde (22 px); platí i bez aktualizovaného style.css */
+ol.eq li { margin: 22px 0; padding-left: 6px; }
+</style>
+</head>
+<body>
+<div class="nav"><a href="index.html">← Přehled materiálů</a></div>
+
+<h1>Řešení – rovnice se zlomky</h1>
+<p class="sub">Všechny výsledky jsou ověřené. Zadání: <a href="rovnice-zlomky-zadani.html">rovnice se zlomky</a>.</p>
+
+<div class="note">
+<strong>Stále stejný postup</strong>
+<ol>
+<li>Najdeme nejmenší společný násobek všech jmenovatelů.</li>
+<li>Jím vynásobíme <strong>každý člen</strong> obou stran, i celá čísla.</li>
+<li>Roznásobíme závorky. Před závorkou s minusem se mění znaménka.</li>
+<li>Neznámé převedeme na jednu stranu, čísla na druhou.</li>
+<li>Vydělíme číslem u neznámé a uděláme zkoušku.</li>
+</ol>
+</div>
+
+<table>
+<tr><th>Č.</th><th>Výsledek</th></tr>
+<tr><td>1</td><td class="result">\(x=12\)</td></tr>
+<tr><td>2</td><td class="result">\(x=9\)</td></tr>
+<tr><td>3</td><td class="result">\(x=12\)</td></tr>
+<tr><td>4</td><td class="result">\(x=11\)</td></tr>
+<tr><td>5</td><td class="result">\(x=2\)</td></tr>
+<tr><td>6</td><td class="result">\(x=9\)</td></tr>
+<tr><td>7</td><td class="result">\(x=9\)</td></tr>
+<tr><td>8</td><td class="result">\(x=-2\)</td></tr>
+<tr><td>9 <span class="star">★</span></td><td class="result">\(x=6\)</td></tr>
+<tr><td>10 <span class="star">★</span></td><td class="result">\(x=10\)</td></tr>
+</table>
+
+<h2>Postupy</h2>
+
+<h3>1) \(\dfrac{2}{3}x=8\)</h3>
+\[\begin{aligned}\frac{2}{3}x&=8 &&|\cdot3\\ 2x&=24 &&|:2\\ x&=12\end{aligned}\]
+<p>Zkouška: \(\dfrac{2}{3}\cdot12=8\) ✓</p>
+
+<h3>2) \(x:\dfrac{3}{4}=12\)</h3>
+<p>Dělení zlomkem je násobení jeho převrácenou hodnotou: \(x:\dfrac{3}{4}=x\cdot\dfrac{4}{3}=\dfrac{4}{3}x\).</p>
+\[\begin{aligned}\frac{4}{3}x&=12 &&|\cdot3\\ 4x&=36 &&|:4\\ x&=9\end{aligned}\]
+<p>Zkouška: \(9:\dfrac{3}{4}=9\cdot\dfrac{4}{3}=12\) ✓</p>
+
+<h3>3) \(\dfrac{x}{4}+\dfrac{x}{6}=5\)</h3>
+<p>Nejmenší společný násobek 4 a 6 je 12.</p>
+\[\begin{aligned}\frac{x}{4}+\frac{x}{6}&=5 &&|\cdot12\\ 3x+2x&=60\\ 5x&=60 &&|:5\\ x&=12\end{aligned}\]
+<p>Zkouška: \(\dfrac{12}{4}+\dfrac{12}{6}=3+2=5\) ✓</p>
+
+<h3>4) \(\dfrac{3x-1}{4}=\dfrac{x+5}{2}\)</h3>
+<p>Nejmenší společný násobek 4 a 2 je 4.</p>
+\[\begin{aligned}\frac{3x-1}{4}&=\frac{x+5}{2} &&|\cdot4\\ 3x-1&=2(x+5)\\ 3x-1&=2x+10 &&|-2x,\ +1\\ x&=11\end{aligned}\]
+<p>Zkouška: \(\dfrac{32}{4}=8\) a \(\dfrac{16}{2}=8\) ✓</p>
+
+<h3>5) \(\dfrac{x+1}{3}-\dfrac{x-2}{4}=1\)</h3>
+<p>Nejmenší společný násobek 3 a 4 je 12. <strong>Pozor:</strong> před druhým zlomkem je minus, proto se v závorce změní znaménka.</p>
+\[\begin{aligned}\frac{x+1}{3}-\frac{x-2}{4}&=1 &&|\cdot12\\ 4(x+1)-3(x-2)&=12\\ 4x+4-3x+6&=12\\ x+10&=12 &&|-10\\ x&=2\end{aligned}\]
+<p>Zkouška: \(\dfrac{3}{3}-\dfrac{0}{4}=1\) ✓</p>
+
+<h3>6) \(\dfrac{2x-3}{5}+\dfrac{x+1}{2}=8\)</h3>
+<p>Nejmenší společný násobek 5 a 2 je 10. Pravou stranu 8 násobíme také: \(8\cdot10=80\).</p>
+\[\begin{aligned}\frac{2x-3}{5}+\frac{x+1}{2}&=8 &&|\cdot10\\ 2(2x-3)+5(x+1)&=80\\ 4x-6+5x+5&=80\\ 9x-1&=80 &&|+1\\ 9x&=81 &&|:9\\ x&=9\end{aligned}\]
+<p>Zkouška: \(\dfrac{15}{5}+\dfrac{10}{2}=3+5=8\) ✓</p>
+
+<h3>7) \(\dfrac{x}{2}-\dfrac{x-3}{3}=\dfrac{x+1}{4}\)</h3>
+<p>Nejmenší společný násobek 2, 3 a 4 je 12.</p>
+\[\begin{aligned}\frac{x}{2}-\frac{x-3}{3}&=\frac{x+1}{4} &&|\cdot12\\ 6x-4(x-3)&=3(x+1)\\ 6x-4x+12&=3x+3\\ 2x+12&=3x+3 &&|-2x,\ -3\\ 9&=x\end{aligned}\]
+<p>Zkouška: \(\dfrac{9}{2}-\dfrac{6}{3}=4{,}5-2=2{,}5\) a \(\dfrac{10}{4}=2{,}5\) ✓</p>
+
+<h3>8) \(\dfrac{3(x-2)}{4}-\dfrac{2x-1}{3}=\dfrac{x}{6}-1\)</h3>
+<p>Nejmenší společný násobek 4, 3 a 6 je 12. Číslo \(-1\) na pravé straně se také násobí: \(-1\cdot12=-12\).</p>
+\[\begin{aligned}\frac{3(x-2)}{4}-\frac{2x-1}{3}&=\frac{x}{6}-1 &&|\cdot12\\ 9(x-2)-4(2x-1)&=2x-12\\ 9x-18-8x+4&=2x-12\\ x-14&=2x-12 &&|-x,\ +12\\ -2&=x\end{aligned}\]
+<p>Zkouška: levá strana \(\dfrac{3\cdot(-4)}{4}-\dfrac{-5}{3}=-3+\dfrac{5}{3}=-\dfrac{4}{3}\), pravá strana \(\dfrac{-2}{6}-1=-\dfrac{1}{3}-1=-\dfrac{4}{3}\) ✓</p>
+
+<h3>9) <span class="star">★</span> \(\dfrac{x+2}{3}-\dfrac{x-1}{6}=\dfrac{2x-5}{4}+\dfrac{1}{12}\)</h3>
+<p>Nejmenší společný násobek 3, 6, 4 a 12 je 12. Zlomek \(\dfrac{1}{12}\) po vynásobení dá 1.</p>
+\[\begin{aligned}\frac{x+2}{3}-\frac{x-1}{6}&=\frac{2x-5}{4}+\frac{1}{12} &&|\cdot12\\ 4(x+2)-2(x-1)&=3(2x-5)+1\\ 4x+8-2x+2&=6x-15+1\\ 2x+10&=6x-14 &&|-2x,\ +14\\ 24&=4x &&|:4\\ 6&=x\end{aligned}\]
+<p>Zkouška: levá strana \(\dfrac{8}{3}-\dfrac{5}{6}=\dfrac{16}{6}-\dfrac{5}{6}=\dfrac{11}{6}\), pravá strana \(\dfrac{7}{4}+\dfrac{1}{12}=\dfrac{21}{12}+\dfrac{1}{12}=\dfrac{22}{12}=\dfrac{11}{6}\) ✓</p>
+
+<h3>10) <span class="star">★</span> \(\dfrac{1}{2}\left(x-\dfrac{x-4}{3}\right)=\dfrac{x+2}{4}+1\)</h3>
+<p>Zlomek v závorce a vnější \(\dfrac{1}{2}\) dohromady: nejmenší společný násobek 2, 3 a 4 je 12. Vynásobíme celou rovnici 12 a závorku roznásobíme: \(12\cdot\dfrac{1}{2}=6\).</p>
+\[\begin{aligned}\frac{1}{2}\left(x-\frac{x-4}{3}\right)&=\frac{x+2}{4}+1 &&|\cdot12\\ 6\left(x-\frac{x-4}{3}\right)&=3(x+2)+12\\ 6x-2(x-4)&=3x+6+12\\ 6x-2x+8&=3x+18\\ 4x+8&=3x+18 &&|-3x,\ -8\\ x&=10\end{aligned}\]
+<p><strong>Druhý způsob:</strong> závorku nejdřív sloučíme: \(x-\dfrac{x-4}{3}=\dfrac{3x-(x-4)}{3}=\dfrac{2x+4}{3}\). Polovina z toho je \(\dfrac{x+2}{3}\). Rovnice je \(\dfrac{x+2}{3}=\dfrac{x+2}{4}+1\). Po vynásobení 12 je \(4(x+2)=3(x+2)+12\), tedy \(x+2=12\).</p>
+<p>Zkouška: levá strana \(\dfrac{1}{2}\left(10-\dfrac{6}{3}\right)=\dfrac{1}{2}\cdot8=4\), pravá strana \(\dfrac{12}{4}+1=4\) ✓</p>
+
+<h3>Časté chyby</h3>
+<ul>
+<li>Žák vynásobí jen zlomky a zapomene na celé číslo (třeba \(-1\) v č. 8, \(+1\) v č. 9 nebo \(+1\) v č. 10).</li>
+<li>Minus před zlomkem se zlomkem v závorce: \(-3(x-2)\) je \(-3x+6\), ne \(-3x-2\).</li>
+<li>Žák násobí každou stranu jiným číslem. Obě strany se násobí <strong>stejným</strong> číslem.</li>
+<li>Dělení zlomkem (č. 2): žák zlomek neobrátí.</li>
+</ul>
+
+</body>
+</html>
+

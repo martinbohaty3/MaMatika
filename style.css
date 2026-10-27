@@ -43,3 +43,7 @@ li { break-inside: avoid; }
 table.data { width: auto; min-width: 60%; margin: 10px 0; }
 table.data td, table.data th { text-align: center; }
 .yn { margin: 4px 0 0 1.2rem; }
+
+/* tabulka výsledků: jen při tisku */
+.print-only { display:none; }
+@media print { .print-only { display:block; } }

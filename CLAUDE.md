@@ -19,6 +19,7 @@
 ## Citlivé informace
 
 - Web je veřejný. Nepiš do souborů ani do commitů žádné osobní údaje o žákyni ani o klientech.
+- Výjimka: stránky „Na co si dát pozor“ (`pozor-*.html`). Žák nebo žákyně se tam uvádí **jen iniciálou** (např. „Žákyně M.“), nikdy celým jménem ani příjmením. Žádné další osobní údaje (škola, třída, známky).
 - Řešení (`*-reseni.html`, `*-postupy.html`) jsou veřejně dostupná všem, kdo znají odkaz. Počítej s tím.
 - Název CERMAT používej jen popisně („inspirované…“). Žádné logo, žádné kopie oficiálních zadání.
 - Nikdy nepřidávej do repozitáře hesla, tokeny ani klíče.
@@ -29,7 +30,7 @@ Vše je v kořeni repozitáře (`index.html` musí zůstat v kořeni).
 
 | Soubor | Obsah |
 |---|---|
-| `index.html` | rozcestník: část „Pro žákyni“ (zadání) a „Pro učitele“ (řešení) |
+| `index.html` | rozcestník: části „Zadání“, „Výsledky“ (řešení a postupy) a „Na co si dát pozor“ |
 | `style.css` | společný vzhled a tisk |
 | `check-katex.js` | kontrola, že se všechny vzorce vykreslí (viz „Kontrola před commitem“) |
 | `zadani.html`, `reseni.html` | 26 úloh: rovnice, výrazy, slovní úlohy |
@@ -38,13 +39,17 @@ Vše je v kořeni repozitáře (`index.html` musí zůstat v kořeni).
 | `prace-rozsireni-zadani.html`, `prace-rozsireni-reseni.html` | rozšíření úloh o práci (14 úloh) |
 | `geometrie-zadani.html`, `geometrie-reseni.html` | Pythagorova věta, prostor, grafy (24 úloh, SVG obrázky) |
 | `rovnice-zlomky-zadani.html`, `rovnice-zlomky-reseni.html` | rovnice se zlomky (10 úloh) |
+| `rovnice-dalsi-zadani.html`, `rovnice-dalsi-reseni.html` | další rovnice a slovní úlohy (12 úloh, 2 varianty úlohy 23 s cyklisty) |
+| `vzorce-zadani.html`, `vzorce-reseni.html` | úpravy fyzikálních vzorců, vyjádření veličiny (16 úloh) |
+| `pozor-m.html` | Žákyně M.: silné stránky a na co si dát pozor (odkazy na pomůcky) |
+| `pomucky.html` | pomůcky k bodům „Na co si dát pozor“, kotvy `#postupne`, `#oznaceni`, `#pismo`, `#lomitko`, `#smirak`, `#soustredeni` |
 
 ## Nová sada úloh: postup
 
 1. Navrhni úlohy (typy a obtížnost viz níže).
 2. **Každý výsledek ověř výpočtem** (Python, `fractions` nebo `sympy`), než ho zapíšeš.
 3. Vytvoř `nazev-zadani.html` a `nazev-reseni.html` podle šablony níže.
-4. Přidej odkazy do `index.html`: zadání do části „Pro žákyni“, řešení do části „Pro učitele“.
+4. Přidej odkazy do `index.html`: zadání do části „Zadání“, řešení do části „Výsledky“.
 5. Spusť kontrolu vzorců (viz níže).
 6. Ukaž mi změny a vyžádej potvrzení. Teprve potom commit a push.
 
@@ -114,6 +119,14 @@ node check-katex.js
 3. Všechny nové stránky jsou v `index.html` a odkazy fungují.
 4. V nadpisech a titulcích není CERMAT. Každý titulek končí „– MaMatika“.
 5. Do repozitáře se nedostaly `node_modules`, `package.json` ani dočasné soubory. Přidej je do `.gitignore`.
+
+## Status line (nastavení mimo repozitář)
+
+- Status line v terminálu ukazuje limity jako pruh o 10 blocích (`█` plný, `░` prázdný), každý blok = 10 %, zaokrouhleno na nejbližší desítku. Čísla se nezobrazují.
+- Zobrazuje se: model | `5h` (5hodinový limit) | `7d` (týdenní limit) | `Spend` (jen při limitu útraty) | `Kontext` (zaplnění kontextového okna). U limitů je čas resetu (`HH:mm` dnes, jinak `d.M. HH:mm`).
+- Limity jsou v datech jen u předplatitelů claude.ai a až po první odpovědi modelu. Bez nich zůstane model a kontext.
+- Skript je `C:\Users\jimis\.claude\statusline.ps1` (PowerShell, bez Node.js a `jq`), spouští ho položka `statusLine` v `C:\Users\jimis\.claude\settings.json`. Není v repozitáři a nesmí se do něj dostat.
+- Změny status line se dělají přes agenta `statusline-setup`.
 
 ## Git
 

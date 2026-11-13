@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MaMatika: pomůcky pro řešení úloh. Postupné úpravy rovnic, značení v obrázcích, přehledný zápis, soustředění.">
+<title>Pomůcky – MaMatika</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+</head>
+<body>
+<div class="nav"><a href="index.html">← Přehled materiálů</a> <button class="print" type="button" onclick="window.print()">Vytisknout</button></div>
+
+<h1>Pomůcky</h1>
+<p class="sub">Jak se vyhnout častým chybám</p>
+<ul>
+<li><a href="#postupne">Násobení a dělení krok za krokem</a></li>
+<li><a href="#oznaceni">Značení v obrázcích</a></li>
+<li><a href="#pismo">Přehledný zápis</a></li>
+<li><a href="#lomitko">Zápis úprav za lomítko</a></li>
+<li><a href="#smirak">Šmírák na pomocné výpočty</a></li>
+<li><a href="#soustredeni">Soustředění: kontrolní seznam</a></li>
+</ul>
+
+<h2 id="postupne">1. Násobení a dělení krok za krokem</h2>
+<div class="note"><strong>Pravidlo:</strong> číslo u neznámé odstraníš <strong>opačnou</strong> operací. Je neznámá násobená? Dělíš. Je dělená? Násobíš. Každá operace patří na <strong>vlastní řádek</strong>.</div>
+<p>Rovnice \(\dfrac{2}{3}x=8\). Když se to dělá najednou v hlavě, snadno vyjde \(x=8\cdot\dfrac{2}{3}\). To je špatně. Krok za krokem:</p>
+\[\begin{aligned}\frac{2}{3}x&=8 &&|\cdot3\\ 2x&=24 &&|:2\\ x&=12\end{aligned}\]
+<p>Kontrola: \(\dfrac{2}{3}\cdot12=8\) ✓. Přehozený výsledek \(\dfrac{16}{3}\) zkouškou neprojde.</p>
+<p>U vzorců stejně. Ze vzorce \(v=\dfrac{s}{t}\) vyjádříme \(t\):</p>
+\[\begin{aligned}v&=\frac{s}{t} &&|\cdot t\\ v\cdot t&=s &&|:v\\ t&=\frac{s}{v}\end{aligned}\]
+<p>Rychlá kontrola smyslu: \(120\ \text{km}\) rychlostí \(60\ \text{km/h}\) trvá \(\dfrac{120}{60}=2\ \text{h}\) ✓</p>
+<h3>Vyzkoušej si</h3>
+<ol type="a">
+<li>\(3x=12\)</li>
+<li>\(\dfrac{x}{4}=5\)</li>
+<li>\(\dfrac{2}{5}x=6\)</li>
+<li>\(0{,}5x=7\)</li>
+</ol>
+<p class="sub">Výsledky: a) 4, b) 20, c) 15, d) 14. Víc úloh: <a href="vzorce-zadani.html">úpravy vzorců</a>, <a href="rovnice-zlomky-zadani.html">rovnice se zlomky</a>.</p>
+
+<h2 id="oznaceni">2. Značení v obrázcích</h2>
+<div class="note"><strong>Proč:</strong> body za postup dostaneš jen tehdy, když je jasné, co počítáš. Zápis \(25=9+16\) nic neříká. Zápis \(c^2=a^2+b^2\) a pak \(c^2=3^2+4^2\) říká všechno.</div>
+<ul>
+<li><strong>Vrcholy</strong> velkými písmeny \(A, B, C, D\), dokola proti směru hodinových ručiček.</li>
+<li><strong>Strany</strong> malými písmeny. Strana \(a\) leží naproti vrcholu \(A\), strana \(b\) naproti \(B\), strana \(c\) naproti \(C\).</li>
+<li><strong>Úhly</strong> řeckými písmeny: \(\alpha\) u vrcholu \(A\), \(\beta\) u \(B\), \(\gamma\) u \(C\).</li>
+<li>V pravoúhlém trojúhelníku je pravý úhel u \(C\), přepona je \(c\). Pravý úhel označ čtverečkem.</li>
+<li>Další veličiny: výška \(v\) (k straně \(a\) je to \(v_a\)), poloměr \(r\), průměr \(d\), úhlopříčka \(u\).</li>
+<li>Hledanou veličinu označ v obrázku otazníkem nebo písmenem a napiš ji i do výpočtu.</li>
+</ul>
+<div class="fig">
+<svg viewBox="0 0 320 200" width="320" height="200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="16">
+<polygon points="30,170 290,170 110,50" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<polyline points="102.2,61.6 113.8,69.4 121.6,57.8" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="14" y="188" font-weight="bold">A</text>
+<text x="294" y="188" font-weight="bold">B</text>
+<text x="104" y="40" font-weight="bold">C</text>
+<text x="208" y="102" font-style="italic" fill="#1f4e8c">a</text>
+<text x="56" y="104" font-style="italic" fill="#1f4e8c">b</text>
+<text x="156" y="192" font-style="italic" fill="#1f4e8c">c (přepona)</text>
+<text x="58" y="164" fill="#1f4e8c">α</text>
+<text x="252" y="164" fill="#1f4e8c">β</text>
+</svg>
+</div>
+<p class="sub">Strana \(a\) leží naproti vrcholu \(A\). Obrázek není v měřítku.</p>
+<table>
+<tr><th>Špatně (bez jmen)</th><th>Dobře (se jmény)</th></tr>
+<tr><td>\(3^2+4^2=25\), výsledek 5</td><td>\(c^2=a^2+b^2\)<br>\(c^2=3^2+4^2=25\)<br>\(c=5\ \text{cm}\)</td></tr>
+</table>
+
+<h2 id="pismo">3. Přehledný zápis</h2>
+<ul>
+<li>Piš <strong>větším písmem</strong>: zlomek ať zabere aspoň dva řádky čtverečkovaného papíru.</li>
+<li>Každý krok na nový řádek. Rovnítka piš pod sebe.</li>
+<li>Mezi úlohami nech volný řádek a úlohu očísluj.</li>
+<li>Minus piš zřetelně a dlouhý, aby nesplynul se zlomkovou čarou ani se nepřehlédl.</li>
+<li>Nepiš přes sebe. Chybu přeškrtni jednou čarou a napiš správně vedle.</li>
+<li>Na obrazovce si stránku zvětšíš klávesami <strong>Ctrl</strong> a <strong>+</strong>.</li>
+</ul>
+
+<h2 id="lomitko">4. Zápis úprav za lomítko</h2>
+<div class="note"><strong>Pravidlo:</strong> nejdřív napiš za lomítko, co uděláš. Teprve potom to udělej. Úprava platí pro <strong>obě strany</strong> rovnice a pro <strong>každý člen</strong>.</div>
+\[\begin{aligned}3(x-2)&=x+8\\ 3x-6&=x+8 &&|-x\\ 2x-6&=8 &&|+6\\ 2x&=14 &&|:2\\ x&=7\end{aligned}\]
+<p>Zkouška: levá strana \(3\cdot5=15\), pravá strana \(7+8=15\) ✓</p>
+<table>
+<tr><th>Zápis</th><th>Znamená</th></tr>
+<tr><td>\(|+6\)</td><td>k oběma stranám přičtu 6</td></tr>
+<tr><td>\(|-x\)</td><td>od obou stran odečtu \(x\)</td></tr>
+<tr><td>\(|\cdot12\)</td><td>každý člen na obou stranách vynásobím 12</td></tr>
+<tr><td>\(|:2\)</td><td>obě strany vydělím 2</td></tr>
+<tr><td>\(|-2x,\ +5\)</td><td>dvě úpravy najednou, jen když jsou jednoduché</td></tr>
+</table>
+
+<h2 id="smirak">5. Šmírák na pomocné výpočty</h2>
+<p>Šmírák je místo na papíře, kde počítáš vedlejší výpočty: násobení pod sebou, společný jmenovatel, druhé mocniny. Hlavní postup tak zůstane čistý a přehledný.</p>
+<div class="fig">
+<svg viewBox="0 0 380 200" width="380" height="200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="13">
+<rect x="10" y="10" width="360" height="180" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="245" y1="10" x2="245" y2="190" stroke="#1f4e8c" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="22" y="32" font-weight="bold">Postup</text>
+<text x="256" y="32" font-weight="bold" fill="#1f4e8c">Šmírák</text>
+<text x="22" y="60">7)</text>
+<text x="44" y="60">4x + 5 = 3(x + 5)</text>
+<text x="44" y="84">4x + 5 = 3x + 15</text>
+<text x="170" y="84">| −3x</text>
+<text x="44" y="108">x + 5 = 15</text>
+<text x="170" y="108">| −5</text>
+<text x="44" y="132">x = 10</text>
+<text x="22" y="162">Syn má 10 let, otec 40.</text>
+<text x="256" y="60" fill="#1f4e8c">k 7)</text>
+<text x="256" y="84" fill="#1f4e8c">3 · 15 = 45</text>
+<text x="256" y="108" fill="#1f4e8c">4 · 10 + 5 = 45</text>
+<text x="256" y="132" fill="#1f4e8c">45 = 45 ✓</text>
+</svg>
+</div>
+<ul>
+<li>Šmírák dej vždy na <strong>stejné místo</strong>, třeba pravou třetinu papíru za svislou čarou.</li>
+<li>Ke každému pomocnému výpočtu napiš <strong>číslo úlohy</strong>.</li>
+<li>Výsledek ze šmíráku přepiš do postupu a zkontroluj, že ses při přepisu nespletla.</li>
+<li>Šmírák se neškrtá. I tam můžou být body za postup.</li>
+</ul>
+
+<h2 id="soustredeni">6. Soustředění: kontrolní seznam</h2>
+<h3>Slovní úloha</h3>
+<ol>
+<li>Přečti zadání <strong>dvakrát</strong>. Podruhé podtrhni čísla a otázku.</li>
+<li>Napiš <strong>Co vím</strong> a <strong>Co hledám</strong>.</li>
+<li>Nakresli náčrtek nebo tabulku (cesta cyklistů, věk teď a za 5 let).</li>
+<li>Označ neznámou: „\(x\) = …“ a napiš slovy, co znamená.</li>
+<li>Sestav rovnici a vyřeš ji.</li>
+<li>Napiš <strong>odpověď větou</strong>. Odpovídá na otázku ze zadání?</li>
+<li>Kontrola smyslu: věk není záporný, rychlost cyklisty není 300&nbsp;km/h.</li>
+</ol>
+<h3>Počítání</h3>
+<ol>
+<li>Jeden krok = jeden řádek. Nespěchej.</li>
+<li>Po každém roznásobení zkontroluj <strong>znaménka</strong>, hlavně za minusem před závorkou.</li>
+<li>Při přepisu z řádku na řádek zkontroluj, že nic nechybí.</li>
+<li>Na konci udělej <strong>zkoušku</strong> dosazením.</li>
+<li>Mezi úlohami se krátce nadechni a začni novou úlohu s čistou hlavou.</li>
+</ol>
+
+<div class="nav"><a href="index.html">← Přehled materiálů</a></div>
+<footer>MaMatika · Neoficiální cvičné příklady inspirované přijímacími zkouškami.</footer>
+</body>
+</html>

@@ -44,6 +44,21 @@ table.data { width: auto; min-width: 60%; margin: 10px 0; }
 table.data td, table.data th { text-align: center; }
 .yn { margin: 4px 0 0 1.2rem; }
 
+/* přehled (index.html): sady podle témat */
+.toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 4px; }
+.toc a { padding:4px 12px; border:1px solid var(--line); border-radius:16px; color:var(--accent); text-decoration:none; font-size:.92rem; }
+.toc a:hover { background:var(--soft); }
+.order { color:var(--muted); font-size:.92rem; margin:0 0 8px; }
+ul.sets { list-style:none; padding:0; margin:0; }
+ul.sets li { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px 16px; margin:8px 0; padding:10px 14px; border:1px solid var(--line); border-radius:8px; }
+ul.sets li > div { flex:1 1 300px; }
+ul.sets span { display:block; color:var(--muted); font-size:.92rem; }
+ul.sets span.new { display:inline-block; margin-left:6px; padding:0 8px; border-radius:10px; background:#e6f4ea; color:#1e7b34; font-size:.78rem; font-weight:700; vertical-align:middle; }
+.links { margin:0; display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+.links a { color:var(--accent); font-size:.92rem; }
+.links a.go { padding:5px 16px; border-radius:6px; background:var(--accent); color:#fff; font-weight:700; text-decoration:none; }
+.links a.go:hover { opacity:.88; }
+
 /* tabulka výsledků: jen při tisku */
 .print-only { display:none; }
 @media print { .print-only { display:block; } }

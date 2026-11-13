@@ -30,7 +30,7 @@ Vše je v kořeni repozitáře (`index.html` musí zůstat v kořeni).
 
 | Soubor | Obsah |
 |---|---|
-| `index.html` | rozcestník: části „Zadání“, „Výsledky“ (řešení a postupy) a „Na co si dát pozor“ |
+| `index.html` | rozcestník podle témat (Rovnice a výrazy, Slovní úlohy o práci, Geometrie, Na co si dát pozor); každá sada je jeden řádek s odkazy Zadání · Řešení · Postupy |
 | `style.css` | společný vzhled a tisk |
 | `check-katex.js` | kontrola, že se všechny vzorce vykreslí (viz „Kontrola před commitem“) |
 | `zadani.html`, `reseni.html` | 26 úloh: rovnice, výrazy, slovní úlohy |
@@ -49,7 +49,7 @@ Vše je v kořeni repozitáře (`index.html` musí zůstat v kořeni).
 1. Navrhni úlohy (typy a obtížnost viz níže).
 2. **Každý výsledek ověř výpočtem** (Python, `fractions` nebo `sympy`), než ho zapíšeš.
 3. Vytvoř `nazev-zadani.html` a `nazev-reseni.html` podle šablony níže.
-4. Přidej odkazy do `index.html`: zadání do části „Zadání“, řešení do části „Výsledky“.
+4. Přidej do `index.html` jeden řádek `<li>` do `ul.sets` ve správném tématu: název, krátký popis a odkazy (`a.go` = Zadání, dál Řešení, případně Postupy). Odkazy jsou vždy jen jedno slovo, bez čísel úloh. Čísla úloh patří až na danou stránku. Nové sadě dej štítek `<span class="new">nové</span>` a u předchozích nových sad ho odeber. Uprav „Doporučené pořadí“ daného tématu. Nové téma = nový `h2` s `id` a odkaz v `nav.toc`.
 5. Spusť kontrolu vzorců (viz níže).
 6. Ukaž mi změny a vyžádej potvrzení. Teprve potom commit a push.
 

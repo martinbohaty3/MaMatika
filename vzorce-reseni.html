@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MaMatika: cvičné příklady inspirované přijímacími zkouškami na střední školy. Úpravy vzorců, vyjádření neznámé.">
+<title>Úpravy vzorců – řešení – MaMatika</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+</head>
+<body>
+<div class="nav"><a href="index.html">← Přehled materiálů</a> <button class="print" type="button" onclick="window.print()">Vytisknout</button></div>
+
+<h1>Řešení – úpravy vzorců</h1>
+<p class="sub">Všechny výsledky jsou ověřené. Zadání: <a href="vzorce-zadani.html">úpravy vzorců</a>.</p>
+
+<div class="note">
+<strong>Stále stejný postup</strong>
+<ol>
+<li>Najdu hledanou veličinu. Je ve jmenovateli? Nejdřív jí celou rovnici vynásobím, aby se dostala nahoru.</li>
+<li>Co je k ní přičtené nebo odečtené, převedu na druhou stranu.</li>
+<li>Čím je násobená, tím vydělím. <strong>Jeden krok = jeden řádek</strong>, úpravu píšu za lomítko.</li>
+<li>Hledanou veličinu napíšu vlevo: \(s=\dots\)</li>
+<li>Kontrola: dosadím jednoduchá čísla do původního i nového vzorce.</li>
+</ol>
+</div>
+
+<table>
+<tr><th>Č.</th><th>Výsledek</th><th>Klíčový krok</th></tr>
+<tr><td>1</td><td class="result">\(s=v\cdot t\)</td><td>\(|\cdot t\)</td></tr>
+<tr><td>2</td><td class="result">\(t=\dfrac{s}{v}\)</td><td>\(|\cdot t\), potom \(|:v\)</td></tr>
+<tr><td>3</td><td class="result">\(V=\dfrac{m}{\rho}\)</td><td>\(|\cdot V\), potom \(|:\rho\)</td></tr>
+<tr><td>4</td><td class="result">\(a=\dfrac{F}{m}\)</td><td>\(|:m\)</td></tr>
+<tr><td>5</td><td class="result">\(S=\dfrac{F}{p}\)</td><td>\(|\cdot S\), potom \(|:p\)</td></tr>
+<tr><td>6</td><td class="result">\(I=\dfrac{U}{R}\)</td><td>\(|\cdot I\), potom \(|:R\)</td></tr>
+<tr><td>7</td><td class="result">\(h=\dfrac{E_p}{m\cdot g}\)</td><td>\(|:(m\cdot g)\)</td></tr>
+<tr><td>8</td><td class="result">\(c=\dfrac{Q}{m\cdot\Delta t}\)</td><td>\(|:(m\cdot\Delta t)\)</td></tr>
+<tr><td>9</td><td class="result">\(\rho=\dfrac{p}{h\cdot g}\)</td><td>\(|:(h\cdot g)\)</td></tr>
+<tr><td>10</td><td class="result">\(m=\dfrac{2E_k}{v^2}\)</td><td>\(|\cdot2\), potom \(|:v^2\)</td></tr>
+<tr><td>11</td><td class="result">\(r_2=\dfrac{F_1\cdot r_1}{F_2}\)</td><td>\(|:F_2\)</td></tr>
+<tr><td>12</td><td class="result">\(a=\dfrac{v-v_0}{t}\)</td><td>\(|-v_0\), potom \(|:t\)</td></tr>
+<tr><td>13 <span class="star">★</span></td><td class="result">\(t_2=t_1+\dfrac{Q}{m\cdot c}\)</td><td>\(|:(m\cdot c)\), potom \(|+t_1\)</td></tr>
+<tr><td>14 <span class="star">★</span></td><td class="result">\(a=\dfrac{2(s-v_0 t)}{t^2}\)</td><td>\(|-v_0t\), \(|\cdot2\), \(|:t^2\)</td></tr>
+<tr><td>15</td><td class="result">\(v=\dfrac{2s}{t}-v_0\)</td><td>\(|\cdot2\), \(|:t\), \(|-v_0\)</td></tr>
+<tr><td>16 <span class="star">★</span></td><td class="result">\(R=\dfrac{R_1\cdot R_2}{R_1+R_2}\)</td><td>sečíst zlomky, obrátit obě strany</td></tr>
+</table>
+
+<h2>Postupy</h2>
+
+<h3>1) \(v=\dfrac{s}{t}\), vyjádři \(s\)</h3>
+\[\begin{aligned}v&=\frac{s}{t} &&|\cdot t\\ v\cdot t&=s\\ s&=v\cdot t\end{aligned}\]
+<p>Kontrola: \(v=60\ \text{km/h}\), \(t=2\ \text{h}\). Dráha \(s=60\cdot2=120\ \text{km}\) a opravdu \(\dfrac{120}{2}=60\) ✓</p>
+
+<h3>2) \(v=\dfrac{s}{t}\), vyjádři \(t\)</h3>
+<p>Čas je ve jmenovateli. Nejdřív ho dostaneme nahoru.</p>
+\[\begin{aligned}v&=\frac{s}{t} &&|\cdot t\\ v\cdot t&=s &&|:v\\ t&=\frac{s}{v}\end{aligned}\]
+<p>Kontrola: \(s=120\ \text{km}\), \(v=60\ \text{km/h}\): \(t=\dfrac{120}{60}=2\ \text{h}\) ✓<br><strong>Pozor:</strong> častá chyba je \(t=\dfrac{v}{s}\). Dosazení to odhalí: \(\dfrac{60}{120}=0{,}5\ \text{h}\) nesedí.</p>
+
+<h3>3) \(\rho=\dfrac{m}{V}\), vyjádři \(V\)</h3>
+\[\begin{aligned}\rho&=\frac{m}{V} &&|\cdot V\\ \rho\cdot V&=m &&|:\rho\\ V&=\frac{m}{\rho}\end{aligned}\]
+<p>Kontrola: hliník má hustotu \(2{,}7\ \text{g/cm}^3\). Kostka o hmotnosti \(540\ \text{g}\) má objem \(V=\dfrac{540}{2{,}7}=200\ \text{cm}^3\) a \(\dfrac{540}{200}=2{,}7\) ✓</p>
+
+<h3>4) \(F=m\cdot a\), vyjádři \(a\)</h3>
+\[\begin{aligned}F&=m\cdot a &&|:m\\ \frac{F}{m}&=a\\ a&=\frac{F}{m}\end{aligned}\]
+<p>Kontrola: \(m=50\ \text{kg}\), \(F=150\ \text{N}\): \(a=\dfrac{150}{50}=3\ \text{m/s}^2\) a \(50\cdot3=150\) ✓</p>
+
+<h3>5) \(p=\dfrac{F}{S}\), vyjádři \(S\)</h3>
+\[\begin{aligned}p&=\frac{F}{S} &&|\cdot S\\ p\cdot S&=F &&|:p\\ S&=\frac{F}{p}\end{aligned}\]
+<p>Kontrola: \(F=600\ \text{N}\), \(p=300\ \text{Pa}\): \(S=\dfrac{600}{300}=2\ \text{m}^2\) a \(\dfrac{600}{2}=300\) ✓</p>
+
+<h3>6) \(R=\dfrac{U}{I}\), vyjádři \(I\)</h3>
+\[\begin{aligned}R&=\frac{U}{I} &&|\cdot I\\ R\cdot I&=U &&|:R\\ I&=\frac{U}{R}\end{aligned}\]
+<p>Kontrola: \(U=12\ \text{V}\), \(R=4\ \Omega\): \(I=\dfrac{12}{4}=3\ \text{A}\) a \(\dfrac{12}{3}=4\) ✓</p>
+
+<h3>7) \(E_p=m\cdot g\cdot h\), vyjádři \(h\)</h3>
+<p>U \(h\) jsou dva činitelé. Vydělíme oběma najednou, nebo postupně: nejdřív \(m\), pak \(g\).</p>
+\[\begin{aligned}E_p&=m\cdot g\cdot h &&|:m\\ \frac{E_p}{m}&=g\cdot h &&|:g\\ \frac{E_p}{m\cdot g}&=h\\ h&=\frac{E_p}{m\cdot g}\end{aligned}\]
+<p>Kontrola: \(m=5\ \text{kg}\), \(g=10\ \text{N/kg}\), \(E_p=400\ \text{J}\): \(h=\dfrac{400}{5\cdot10}=8\ \text{m}\) a \(5\cdot10\cdot8=400\) ✓</p>
+
+<h3>8) \(Q=m\cdot c\cdot\Delta t\), vyjádři \(c\)</h3>
+\[\begin{aligned}Q&=m\cdot c\cdot\Delta t &&|:(m\cdot\Delta t)\\ c&=\frac{Q}{m\cdot\Delta t}\end{aligned}\]
+<p>Kontrola: ohřev \(2\ \text{kg}\) vody o \(10\ ^\circ\text{C}\) spotřebuje \(84\,000\ \text{J}\): \(c=\dfrac{84\,000}{2\cdot10}=4\,200\ \text{J/(kg}\cdot{}^\circ\text{C)}\), to je opravdu měrná tepelná kapacita vody ✓</p>
+
+<h3>9) \(p=h\cdot\rho\cdot g\), vyjádři \(\rho\)</h3>
+\[\begin{aligned}p&=h\cdot\rho\cdot g &&|:(h\cdot g)\\ \rho&=\frac{p}{h\cdot g}\end{aligned}\]
+<p>Kontrola: v hloubce \(3\ \text{m}\) je tlak vody \(30\,000\ \text{Pa}\): \(\rho=\dfrac{30\,000}{3\cdot10}=1\,000\ \text{kg/m}^3\), to je hustota vody ✓</p>
+
+<h3>10) \(E_k=\dfrac{1}{2}\,m\cdot v^2\), vyjádři \(m\)</h3>
+<p>Nejdřív se zbavíme zlomku \(\dfrac{1}{2}\) (násobíme 2), potom dělíme \(v^2\).</p>
+\[\begin{aligned}E_k&=\frac{1}{2}\,m\cdot v^2 &&|\cdot2\\ 2E_k&=m\cdot v^2 &&|:v^2\\ m&=\frac{2E_k}{v^2}\end{aligned}\]
+<p>Kontrola: \(v=5\ \text{m/s}\), \(E_k=50\ \text{J}\): \(m=\dfrac{2\cdot50}{25}=4\ \text{kg}\) a \(\dfrac{1}{2}\cdot4\cdot25=50\) ✓</p>
+
+<h3>11) \(F_1\cdot r_1=F_2\cdot r_2\), vyjádři \(r_2\)</h3>
+\[\begin{aligned}F_1\cdot r_1&=F_2\cdot r_2 &&|:F_2\\ \frac{F_1\cdot r_1}{F_2}&=r_2\\ r_2&=\frac{F_1\cdot r_1}{F_2}\end{aligned}\]
+<p>Kontrola: \(F_1=200\ \text{N}\), \(r_1=3\ \text{m}\), \(F_2=600\ \text{N}\): \(r_2=\dfrac{200\cdot3}{600}=1\ \text{m}\). Smysl: větší síla stačí na kratším rameni ✓</p>
+
+<h3>12) \(v=v_0+a\cdot t\), vyjádři \(a\)</h3>
+<p>Nejdřív odečteme to, co je přičtené, teprve potom dělíme. Obráceně by to nešlo, \(v_0\) není násobené \(t\).</p>
+\[\begin{aligned}v&=v_0+a\cdot t &&|-v_0\\ v-v_0&=a\cdot t &&|:t\\ a&=\frac{v-v_0}{t}\end{aligned}\]
+<p>Kontrola: \(v_0=5\ \text{m/s}\), \(t=4\ \text{s}\), \(v=13\ \text{m/s}\): \(a=\dfrac{13-5}{4}=2\ \text{m/s}^2\) a \(5+2\cdot4=13\) ✓</p>
+
+<h3>13) <span class="star">★</span> \(Q=m\cdot c\cdot(t_2-t_1)\), vyjádři \(t_2\)</h3>
+<p>Závorku bereme jako jeden celek. Nejdřív ji osvobodíme dělením, potom přičteme \(t_1\).</p>
+\[\begin{aligned}Q&=m\cdot c\cdot(t_2-t_1) &&|:(m\cdot c)\\ \frac{Q}{m\cdot c}&=t_2-t_1 &&|+t_1\\ t_2&=t_1+\frac{Q}{m\cdot c}\end{aligned}\]
+<p><strong>Druhý způsob:</strong> roznásobíme závorku: \(Q=mct_2-mct_1\), \(|+mct_1\): \(Q+mct_1=mct_2\), \(|:(mc)\): \(t_2=\dfrac{Q+mct_1}{mc}\). Je to totéž, jen jinak zapsané.</p>
+<p>Kontrola: \(2\ \text{kg}\) vody z \(20\ ^\circ\text{C}\), \(Q=420\,000\ \text{J}\): \(t_2=20+\dfrac{420\,000}{2\cdot4\,200}=20+50=70\ ^\circ\text{C}\) ✓</p>
+
+<h3>14) <span class="star">★</span> \(s=v_0\cdot t+\dfrac{1}{2}\,a\cdot t^2\), vyjádři \(a\)</h3>
+\[\begin{aligned}s&=v_0\cdot t+\frac{1}{2}\,a\cdot t^2 &&|-v_0\cdot t\\ s-v_0\cdot t&=\frac{1}{2}\,a\cdot t^2 &&|\cdot2\\ 2(s-v_0\cdot t)&=a\cdot t^2 &&|:t^2\\ a&=\frac{2(s-v_0\cdot t)}{t^2}\end{aligned}\]
+<p><strong>Pozor:</strong> při násobení 2 musí být levá strana v závorce. Násobíme celou stranu, ne jen \(s\).</p>
+<p>Kontrola: \(v_0=3\ \text{m/s}\), \(t=4\ \text{s}\), \(s=28\ \text{m}\): \(a=\dfrac{2(28-12)}{16}=\dfrac{32}{16}=2\ \text{m/s}^2\) a \(3\cdot4+\dfrac{1}{2}\cdot2\cdot16=12+16=28\) ✓</p>
+
+<h3>15) \(s=\dfrac{v_0+v}{2}\cdot t\), vyjádři \(v\)</h3>
+\[\begin{aligned}s&=\frac{v_0+v}{2}\cdot t &&|\cdot2\\ 2s&=(v_0+v)\cdot t &&|:t\\ \frac{2s}{t}&=v_0+v &&|-v_0\\ v&=\frac{2s}{t}-v_0\end{aligned}\]
+<p>Kontrola: \(v_0=4\ \text{m/s}\), \(t=6\ \text{s}\), \(s=42\ \text{m}\): \(v=\dfrac{84}{6}-4=14-4=10\ \text{m/s}\) a \(\dfrac{4+10}{2}\cdot6=42\) ✓</p>
+
+<h3>16) <span class="star">★</span> \(\dfrac{1}{R}=\dfrac{1}{R_1}+\dfrac{1}{R_2}\), vyjádři \(R\)</h3>
+<p>Pravou stranu sečteme na společného jmenovatele \(R_1\cdot R_2\). Potom obě strany obrátíme (převrácená hodnota).</p>
+\[\begin{aligned}\frac{1}{R}&=\frac{1}{R_1}+\frac{1}{R_2}\\ \frac{1}{R}&=\frac{R_2}{R_1\cdot R_2}+\frac{R_1}{R_1\cdot R_2}\\ \frac{1}{R}&=\frac{R_1+R_2}{R_1\cdot R_2} &&|\ \text{obě strany obrátíme}\\ R&=\frac{R_1\cdot R_2}{R_1+R_2}\end{aligned}\]
+<p><strong>Pozor:</strong> \(R\) není \(R_1+R_2\). Obracet smíme jen tehdy, když je na každé straně <strong>jeden</strong> zlomek.</p>
+<p>Kontrola: \(R_1=6\ \Omega\), \(R_2=3\ \Omega\): \(R=\dfrac{18}{9}=2\ \Omega\) a \(\dfrac{1}{6}+\dfrac{1}{3}=\dfrac{3}{6}=\dfrac{1}{2}\) ✓. Smysl: paralelně zapojený odpor je menší než každý z nich.</p>
+
+<h3>Časté chyby</h3>
+<ul>
+<li>Přehozený zlomek: \(t=\dfrac{v}{s}\) místo \(t=\dfrac{s}{v}\). Pomůže dosadit čísla.</li>
+<li>Dělení dřív než odečtení (č. 12, 15): \(v_0\) se nejdřív musí odečíst.</li>
+<li>Při násobení celé strany chybí závorka (č. 14).</li>
+<li>Obracení zlomků, když je na straně součet (č. 16).</li>
+</ul>
+
+<div class="nav"><a href="index.html">← Přehled materiálů</a></div>
+<footer>MaMatika · Neoficiální cvičné příklady inspirované přijímacími zkouškami.</footer>
+</body>
+</html>

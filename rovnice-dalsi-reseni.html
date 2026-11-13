@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MaMatika: cvičné příklady inspirované přijímacími zkouškami na střední školy. Rovnice a slovní úlohy řešené rovnicí.">
+<title>Další rovnice a slovní úlohy – řešení – MaMatika</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+</head>
+<body>
+<div class="nav"><a href="index.html">← Přehled materiálů</a> <button class="print" type="button" onclick="window.print()">Vytisknout</button></div>
+
+<h1>Řešení – další rovnice a slovní úlohy</h1>
+<p class="sub">Všechny výsledky jsou ověřené. Zadání: <a href="rovnice-dalsi-zadani.html">další rovnice a slovní úlohy</a>.</p>
+
+<table>
+<tr><th>Č.</th><th>Výsledek</th><th>Klíčový krok</th></tr>
+<tr><td>1</td><td class="result">\(x=15\)</td><td>roznásobit: \(2x-14=x+1\)</td></tr>
+<tr><td>2</td><td class="result">\(x=7\)</td><td>\(|\cdot6\): \(5x+1=36\)</td></tr>
+<tr><td>3</td><td class="result">\(x=3\)</td><td>\(|\cdot12\): \(7x+7=4x+16\)</td></tr>
+<tr><td>4 <span class="star">★</span></td><td class="result">\(x=2\)</td><td>\(x^2\) se odečte: \(-5x+11=2x-3\)</td></tr>
+<tr><td>5</td><td class="result">\(x=9\)</td><td>\(|\cdot6\): \(x+15=24\)</td></tr>
+<tr><td>6</td><td class="result">\(x=5\)</td><td>\(|\cdot10\): \(7x-20=15\)</td></tr>
+<tr><td>7</td><td class="result">syn 10 let, otec 40 let</td><td>\(4x+5=3(x+5)\)</td></tr>
+<tr><td>8</td><td class="result">10&nbsp;cm × 5&nbsp;cm, obsah 50&nbsp;cm²</td><td>délka \(=x+5\), \(2(2x+5)=30\)</td></tr>
+<tr><td>9</td><td class="result">Karel 600&nbsp;Kč, Petr 500&nbsp;Kč, Lukáš 300&nbsp;Kč</td><td>\(x+(x-100)+\dfrac{x}{2}=1\,400\)</td></tr>
+<tr><td>10</td><td class="result">12 dvacetikorun, 11 padesátikorun</td><td>\(20x+50(23-x)=790\)</td></tr>
+<tr><td>11 <span class="star">★</span></td><td class="result">v 10:00, A ujede 36&nbsp;km</td><td>\(18(t+0{,}5)+24t=72\)</td></tr>
+<tr><td>12</td><td class="result">A 30&nbsp;km/h, B 24&nbsp;km/h</td><td>\(1{,}5(v+v+6)=81\)</td></tr>
+</table>
+
+<h2>Postupy</h2>
+
+<h3>1) \(4(x-3)-2(x+1)=x+1\)</h3>
+<p><strong>Pozor:</strong> minus před druhou závorkou mění obě znaménka: \(-2(x+1)=-2x-2\).</p>
+\[\begin{aligned}4(x-3)-2(x+1)&=x+1\\ 4x-12-2x-2&=x+1\\ 2x-14&=x+1 &&|-x\\ x-14&=1 &&|+14\\ x&=15\end{aligned}\]
+<p>Zkouška: levá strana \(4\cdot12-2\cdot16=48-32=16\), pravá strana \(15+1=16\) ✓</p>
+
+<h3>2) \(\dfrac{x-1}{2}+\dfrac{x+2}{3}=6\)</h3>
+<p>Nejmenší společný násobek 2 a 3 je 6. Číslo 6 na pravé straně se také násobí.</p>
+\[\begin{aligned}\frac{x-1}{2}+\frac{x+2}{3}&=6 &&|\cdot6\\ 3(x-1)+2(x+2)&=36\\ 3x-3+2x+4&=36\\ 5x+1&=36 &&|-1\\ 5x&=35 &&|:5\\ x&=7\end{aligned}\]
+<p>Zkouška: \(\dfrac{6}{2}+\dfrac{9}{3}=3+3=6\) ✓</p>
+
+<h3>3) \(\dfrac{3x+1}{4}-\dfrac{x-2}{6}=\dfrac{x+4}{3}\)</h3>
+<p>Nejmenší společný násobek 4, 6 a 3 je 12.</p>
+\[\begin{aligned}\frac{3x+1}{4}-\frac{x-2}{6}&=\frac{x+4}{3} &&|\cdot12\\ 3(3x+1)-2(x-2)&=4(x+4)\\ 9x+3-2x+4&=4x+16\\ 7x+7&=4x+16 &&|-4x\\ 3x+7&=16 &&|-7\\ 3x&=9 &&|:3\\ x&=3\end{aligned}\]
+<p>Zkouška: levá strana \(\dfrac{10}{4}-\dfrac{1}{6}=\dfrac{30}{12}-\dfrac{2}{12}=\dfrac{28}{12}=\dfrac{7}{3}\), pravá strana \(\dfrac{7}{3}\) ✓</p>
+
+<h3>4) <span class="star">★</span> \((x-3)^2-(x+1)(x-2)=2x-3\)</h3>
+<p>Vzorec \((a-b)^2=a^2-2ab+b^2\). Součin závorek dáme do závorky, protože před ním je minus.</p>
+\[\begin{aligned}(x-3)^2-(x+1)(x-2)&=2x-3\\ x^2-6x+9-(x^2-x-2)&=2x-3\\ x^2-6x+9-x^2+x+2&=2x-3\\ -5x+11&=2x-3 &&|-2x\\ -7x+11&=-3 &&|-11\\ -7x&=-14 &&|:(-7)\\ x&=2\end{aligned}\]
+<p>Zkouška: levá strana \((-1)^2-3\cdot0=1\), pravá strana \(4-3=1\) ✓</p>
+
+<h3>5) \(\dfrac{2(x+3)}{3}-\dfrac{x-1}{2}=4\)</h3>
+\[\begin{aligned}\frac{2(x+3)}{3}-\frac{x-1}{2}&=4 &&|\cdot6\\ 4(x+3)-3(x-1)&=24\\ 4x+12-3x+3&=24\\ x+15&=24 &&|-15\\ x&=9\end{aligned}\]
+<p>Zkouška: \(\dfrac{2\cdot12}{3}-\dfrac{8}{2}=8-4=4\) ✓</p>
+
+<h3>6) \(0{,}4(x-5)+0{,}3x=1{,}5\)</h3>
+<p>Desetinných čísel se zbavíme násobením 10.</p>
+\[\begin{aligned}0{,}4(x-5)+0{,}3x&=1{,}5 &&|\cdot10\\ 4(x-5)+3x&=15\\ 4x-20+3x&=15\\ 7x-20&=15 &&|+20\\ 7x&=35 &&|:7\\ x&=5\end{aligned}\]
+<p>Zkouška: \(0{,}4\cdot0+0{,}3\cdot5=1{,}5\) ✓</p>
+
+<h3>7) Otec a syn</h3>
+<table>
+<tr><th></th><th>teď</th><th>za 5 let</th></tr>
+<tr><td>syn</td><td>\(x\)</td><td>\(x+5\)</td></tr>
+<tr><td>otec</td><td>\(4x\)</td><td>\(4x+5\)</td></tr>
+</table>
+\[\begin{aligned}4x+5&=3(x+5)\\ 4x+5&=3x+15 &&|-3x\\ x+5&=15 &&|-5\\ x&=10\end{aligned}\]
+<p>Syn má 10 let, otec 40 let.<br>Zkouška: za 5 let 15 a 45 let, \(45=3\cdot15\) ✓</p>
+
+<h3>8) Obdélník a čtverec</h3>
+<p>Šířka \(x\). Po úpravě jsou strany stejné: \(\text{délka}-3=x+2\), proto délka \(=x+5\).</p>
+\[\begin{aligned}2(x+5+x)&=30 &&|:2\\ 2x+5&=15 &&|-5\\ 2x&=10 &&|:2\\ x&=5\end{aligned}\]
+<p>Šířka 5&nbsp;cm, délka 10&nbsp;cm, obsah \(10\cdot5=50\ \text{cm}^2\).<br>Zkouška: obvod \(2\cdot(10+5)=30\ \text{cm}\), čtverec \(10-3=7\) a \(5+2=7\) ✓</p>
+
+<h3>9) Rozdělení peněz</h3>
+<p>Karel \(x\), Petr \(x-100\), Lukáš \(\dfrac{x}{2}\).</p>
+\[\begin{aligned}x+(x-100)+\frac{x}{2}&=1\,400 &&|\cdot2\\ 2x+2x-200+x&=2\,800\\ 5x-200&=2\,800 &&|+200\\ 5x&=3\,000 &&|:5\\ x&=600\end{aligned}\]
+<p>Karel 600&nbsp;Kč, Petr 500&nbsp;Kč, Lukáš 300&nbsp;Kč.<br>Zkouška: \(600+500+300=1\,400\) ✓</p>
+
+<h3>10) Mince v pokladničce</h3>
+<p>Dvacetikorun \(x\), padesátikorun \(23-x\).</p>
+\[\begin{aligned}20x+50(23-x)&=790\\ 20x+1\,150-50x&=790\\ -30x+1\,150&=790 &&|-1\,150\\ -30x&=-360 &&|:(-30)\\ x&=12\end{aligned}\]
+<p>12 dvacetikorun a 11 padesátikorun.<br>Zkouška: \(12+11=23\) mincí, \(240+550=790\ \text{Kč}\) ✓</p>
+
+<h3>11) <span class="star">★</span> Cyklisté, B vyjíždí o půl hodiny později</h3>
+<p>Varianta úlohy 23 ze sady <a href="zadani.html">26 úloh</a>. Čas \(t\) je doba jízdy cyklisty B v hodinách. Cyklista A jede o půl hodiny déle: \(t+0{,}5\). Když se potkají, ujeli dohromady celých 72&nbsp;km.</p>
+\[\begin{aligned}18(t+0{,}5)+24t&=72\\ 18t+9+24t&=72\\ 42t+9&=72 &&|-9\\ 42t&=63 &&|:42\\ t&=1{,}5\end{aligned}\]
+<p>Cyklista B jede 1,5&nbsp;h od 8:30, potkají se v 10:00. Cyklista A jede 2&nbsp;h a ujede \(18\cdot2=36\ \text{km}\).</p>
+<p><strong>Druhý způsob:</strong> za první půlhodinu ujede A sám \(9\ \text{km}\). Zbývá \(72-9=63\ \text{km}\). Potom se přibližují rychlostí \(18+24=42\ \text{km/h}\). Potkají se za \(63:42=1{,}5\ \text{h}\).</p>
+<p>Zkouška: A ujel 36&nbsp;km, B \(24\cdot1{,}5=36\ \text{km}\), dohromady 72&nbsp;km ✓</p>
+
+<h3>12) Cyklisté, neznámá rychlost</h3>
+<p>Rychlost cyklisty B je \(v\), cyklisty A \(v+6\). Za 1,5&nbsp;h ujedou dohromady 81&nbsp;km.</p>
+\[\begin{aligned}1{,}5(v+v+6)&=81 &&|:1{,}5\\ 2v+6&=54 &&|-6\\ 2v&=48 &&|:2\\ v&=24\end{aligned}\]
+<p>Cyklista B jel 24&nbsp;km/h, cyklista A 30&nbsp;km/h.</p>
+<p><strong>Druhý způsob:</strong> přibližují se rychlostí \(81:1{,}5=54\ \text{km/h}\). Součet rychlostí je 54, rozdíl 6. Pomalejší: \((54-6):2=24\ \text{km/h}\).</p>
+<p>Zkouška: \(1{,}5\cdot30+1{,}5\cdot24=45+36=81\ \text{km}\) ✓</p>
+
+<h3>Časté chyby</h3>
+<ul>
+<li>Minus před závorkou nebo před součinem (č. 1, 4): znaménko se změní jen u prvního členu. Musí se změnit u všech.</li>
+<li>Při násobení rovnice se zapomene vynásobit celé číslo na pravé straně (č. 2, 5, 9).</li>
+<li>Cyklisté (č. 11): nejedou stejně dlouho. Cyklista A jede o půl hodiny déle, protože vyjel dřív.</li>
+<li>Výsledek bez odpovědi na otázku: v č. 11 se ptáme na čas hodin (10:00), ne na 1,5&nbsp;h.</li>
+</ul>
+
+<div class="nav"><a href="index.html">← Přehled materiálů</a></div>
+<footer>MaMatika · Neoficiální cvičné příklady inspirované přijímacími zkouškami.</footer>
+</body>
+</html>

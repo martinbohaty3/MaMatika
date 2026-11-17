@@ -48,6 +48,8 @@ table.data td, table.data th { text-align: center; }
 .toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 4px; }
 .toc a { padding:4px 12px; border:1px solid var(--line); border-radius:16px; color:var(--accent); text-decoration:none; font-size:.92rem; }
 .toc a:hover { background:var(--soft); }
+.toc a.order-btn { margin-left:auto; background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; } /* tlačítko Objednat doučování: inverzní barvy */
+.toc a.order-btn:hover { background:var(--accent); opacity:.88; }
 .order { color:var(--muted); font-size:.92rem; margin:0 0 8px; }
 ul.sets { list-style:none; padding:0; margin:0; }
 ul.sets li { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px 16px; margin:8px 0; padding:10px 14px; border:1px solid var(--line); border-radius:8px; }
